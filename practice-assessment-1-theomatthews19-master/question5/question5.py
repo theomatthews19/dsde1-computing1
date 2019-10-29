@@ -9,19 +9,29 @@ Simple functions performing operations on basic Python data structures.
 # Write a function that merges two lists together only if the length of both
 # lists is greater than 4. Otherwise return an empty list.
 def merge_list(list1, list2):
-    return
+    finallist = [list1 + list2]
+    emptylist = []
+    if len(list1)>4 and len(list2)>4:
+        return finallist
+    else:
+        return emptylist
 
 # Write a function that returns a list containing unique values from the input_list.
 # In other words, any repeated values are removed.
 def unique_values(input_list):
-    return
+    unique_v = []
+    for i in input_list:
+        if i not in unique_v:
+            unique_v.append(i)
+    return unique_v
+
 
 # Strings
 
 # Write a function that returns a string where first "x" characters are lower
 # case. "x" is passed as the second parameter. 
 def start_to_lower(string, x):
-    return
+
 
 # Write a function that returns the character which first occurs for the second
 # time in the string. For example in string "abcdefcab" the character "c"
