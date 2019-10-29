@@ -20,7 +20,7 @@ def flowchart(input_list):
             common_denominators.append(3)
 
         # if the item is divisible by two
-        elif not i%2:
+        elif not i%2: 
             # add the value 2 to the list
             common_denominators.append(2)
 
