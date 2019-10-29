@@ -8,14 +8,14 @@ with functions.
 
 # write a function that adds 1
 # to the input and prints the result
-def inc(a):
+def inc(a+1):
     print(a)
 
 
 # write a function that adds 1
 # to the input and returns the result
 def inc_return(a):
-    return # hint this is incomplete
+    return a+1
 
 
 # write a function that adds
