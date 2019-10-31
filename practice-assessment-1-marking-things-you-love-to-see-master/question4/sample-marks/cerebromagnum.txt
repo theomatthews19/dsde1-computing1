@@ -1,0 +1,8 @@
+Question 4a
+    5/5
+    code works
+
+Question 4b
+    3/5
+    code does not work as wanted, however it does run
+    

@@ -1,0 +1,6 @@
+Question 3:
+5/5 no errors
+Question 4a:
+5/5 no errors
+Question 4b:
+3/5 Doesnt emit the correct function due to indentation error
