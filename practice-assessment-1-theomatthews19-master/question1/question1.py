@@ -12,7 +12,8 @@ def flowchart(input_value):
             return "positive-even"
         else:
             return "positive-odd"
-
+            
+"""asks if is divisible by 2"""
     elif input_value % 2 < 0:
         if input_value % 2 == 0:
             return "negative-even"
