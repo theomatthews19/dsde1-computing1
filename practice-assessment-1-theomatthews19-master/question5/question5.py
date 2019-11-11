@@ -1,6 +1,5 @@
 '''
 question5.py
-
 Simple functions performing operations on basic Python data structures.
 '''
 
@@ -88,4 +87,3 @@ def max_min(input_list, operation = "max"):
         return "none"
     
     return""
-
