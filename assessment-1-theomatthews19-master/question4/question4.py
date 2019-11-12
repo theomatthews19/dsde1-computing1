@@ -38,7 +38,7 @@ def positive_roots(a, b, c):
     roots = quad(a, b, c)
 
     # check if both roots are positive
-    if roots{0}>0 and roots{1}>0
+    if roots[0]>0 and roots[1]>0:
         print(True)
     
     return 
