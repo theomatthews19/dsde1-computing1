@@ -14,10 +14,11 @@ def all_but_first_and_last(input_list):
 
 def merge_sentences(sentence1, sentence2):
     """joins two strings, with the shorter string always being returned first"""
+    string = ()
     if len(sentence1) < len(sentence2):     # if the length of sentence1 is less than sentence2
-        return merge_sentences.join((sentence1, sentence2))        # join sentences in specific order
+        return string.join((sentence1, sentence2))        # join sentences in specific order
     else:                                                  # if the length of sentence1 is greater than sentence2
-        return merge_sentences.join((sentence2, sentence1))        # join sentences in specific order
+        return string.join((sentence2, sentence1))        # join sentences in specific order
 
 
 def upper_case(string):
