@@ -1,82 +1,63 @@
-'''
-question5.py
-
-Simple functions performing operations on basic Python data structures.
-'''
-
-# Lists
-
-# Write a function that checks if all dictionaries in a list are empty or not.
-# return True if all dictionaries are empty, False otherwise
 def list_of_dicts_empty(input_list):
-    all_empty = True
+    """checks if all dictionaries in list_of_dicts_empty are empty"""
+    all_empty = True             
     for i in input_list:
         if i:
             all_empty = False
 
-# Write a function that returns a list containig all but the first and the last
-# element of "the_list". 
-# example: the_list = [1,2,3,4,5,6]
-# returns [2,3,4,5]
+
 def all_but_first_and_last(input_list):
-    del all_but_first_and_last[0]
-    del all_but_first_and_last[-1]
-    return all_but_first_and_last
+    """Returns a list with the first and last values removed"""
+    input_list = []
+    return input_list[1:-1]   #returns values from the second in the list to the penultimate value
 
 
-
-# Strings
-
-# Write a function that concatenates two sentences passed as parameters. The
-# returned string contains the shorter sentence first. There is exactly one space 
-# between the fullstop of the first sentence and the beginning of the second 
-# sentence. All whitespace at the beginning and end of the sentences passed as 
-# parameters should be ignored and not include in the length of the sentence (when
-# determining which sentence should go first).
 def merge_sentences(sentence1, sentence2):
-    if len(sentence1) < len(sentence2):
-        merge_sentences.join((sentence1, sentence2))
-    else:
-        merge_sentences.join((sentence2, sentence1))
+    """joins two strings, with the shorter string always being returned first"""
+    if len(sentence1) < len(sentence2):     # if the length of sentence1 is less than sentence2
+        return merge_sentences.join((sentence1, sentence2))        # join sentences in specific order
+    else:                                                  # if the length of sentence1 is greater than sentence2
+        return merge_sentences.join((sentence2, sentence1))        # join sentences in specific order
 
-    return merge_sentences
 
-# Write a function that returns the string in upper case if there are at least
-# 3 uppercase letters in the first 5 letters of the string. If there are not 
-# at least 3 uppercase letters in the first 5 letters of the string, return the
-# original string.
 def upper_case(string):
-    number_of_upper = 0
-    for char in string[:5]:
-        if char.upper == char:
-            number_of_upper += 1
-    if number_of_upper >= 3:
-        return string.upper()
+    """returns string in upper case if there a 3 out of the first 5 letters as uppercase
+    if not, will return the original string"""
+    number_of_upper = 0         # sets initial number of uppercase letters to 0
+    for char in string[:5]:         # for the first 5 characters in the string
+        if char.upper == char:      # sets char = uppercase
+            number_of_upper += 1        
+    if number_of_upper >= 3:        # if number of uppercase letters is greater than or equal to 3
+        return string.upper()        # returns the string in ALL uppercase
     else:
-        return string.lower()
+        return string.lower()          #otherwise, returns string in ALL lovercase
 
-# Dictionaries
 
-# Write a function that checks whether there is a key in the dictionary whose
-# length is > 3. Function returns True or False.
 def key_longer(dictionary):
-    for i in dictionary():
-        if len(dictionary.key(i)) > 3:
-            return True
+    """returns True if key length in dictionary is more than 3
+    otherwise returns False"""
+    for i in dictionary():                     # any word in the dictionary
+        if len(dictionary.key(i)) > 3:             # if it's length is greater than 3
+            return True                         #return True 
         else:
             return False
 
-# Write function that checks whether there is a value in the dictionary greater
-# than 5. Function returns True or False
+
 def value_greater(dictionary):
+    """checks if a value in dictionary is greater than 5"""
+    for i in dictionary():
+        if i > 5:               # if the value in the dictionary is greater than 5
+            return True         # return true 
+        else:
+            return False
 
 
-# Parameters
-
-# Write a function with two parameters "shape" and "colour". The function
-# should return text "The {shape} has colour {coulour}." The default shape
-# should be "circle" and the default colour should be "black". If the parameter
-# colour is None then the text should read as "Shape {shape} is colourless."
-def shape_colour():
-
-
+def shape_colour(shape = "circle", colour = "black"):
+    """returns a sentence with the parameters "shape" and "colour" inserted
+    default colour is set to "circle" (for shape) and "black" for colour
+    if colour is none, will read "colour" as "colourless"."""
+    if colour != None:                                  # if colour is not equal to nothing
+        return "The {shape} has colour {colour}."       # return printed sentence
+    else:
+        colour = "colourless"                            # if colour = none, 
+                                                        # print colourless instead
