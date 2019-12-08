@@ -24,7 +24,7 @@ def quad(a, b, c):
     x1 = (-b + sq)/(2*a)
 
     # return the zeroes
-    return (x0, X1)
+    return (x0, x1)
 
 
 
@@ -39,6 +39,6 @@ def positive_roots(a, b, c):
 
     # check if both roots are positive
     if roots[0]>0 and roots[1]>0:
-        print(True)
-    
-    return 
+        return True
+
+    return

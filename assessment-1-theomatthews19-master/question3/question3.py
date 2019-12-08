@@ -13,7 +13,7 @@ Code Functionality (5)
 1 point - multiple errors remain
 0 points - all original errors remain or new ones introduced
 '''
-
+import math
 
 def hypotenuse(side_a, side_b):
     '''Calcuates the hypotenuse given two sides of a triangle'''
@@ -33,6 +33,6 @@ def construct_hypot_sentence(side_a, side_b):
 
     # put together and return the string
     sentence = 'Given the sides {:1.1f} and {:1.1f}, the hypotenuse is: {:1.1f}'.format(side_a, side_b, hypot)
-    return 
+    return sentence
 
 
